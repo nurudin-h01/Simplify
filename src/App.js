@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './components/navbar';
 import Tab from './components/tab';
 import Filter from './components/filter';
