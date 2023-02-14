@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: {
     // enabled: true,
-    content: ["./**/*.html", "./**/*.js"],
+    content: ["./**/*.html", "./**/*.jsx"],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -21,6 +21,10 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
+
+      blues: "#006EC5",
+      blueLight: "#F5FCFF",
+      blueDark:"#0F4C7B",
 
       gray: {
         100: "#f9f9f9",
@@ -277,6 +281,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      poppins: ["Poppins"],
       sans: [
         "ui-sans-serif",
         "system-ui",
