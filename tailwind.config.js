@@ -1,8 +1,12 @@
-/** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  purge: {
+    // enabled: true,
+    content: ["./**/*.html", "./**/*.js"],
+  },
+  presets: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       gridTemplateColumns: {        
@@ -15,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

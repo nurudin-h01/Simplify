@@ -7,6 +7,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import classatom from './store/atoms/ClassAtom';
 import classselector from './store/selectors/ClassSelector';
 
+
 function App() {
   const [formstate, setformstate] = useRecoilState(classatom);
   const classvalue = useRecoilValue(classselector)
