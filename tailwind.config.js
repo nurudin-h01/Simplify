@@ -1,22 +1,10 @@
-const colors = require("tailwindcss/colors");
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: {
-    // enabled: true,
-    content: ["./**/*.html", "./**/*.js"],
-  },
-  presets: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {
-      gridTemplateColumns: {        
-        // Simple 16 column grid        
-        '20': 'repeat(20, minmax(0, 1fr))',     
-      },
-      gridColumn: {
-        'span-19': 'span 19 / span 19',
-      } 
-    },
+    extend: {},
   },
   plugins: [],
-};
+}
