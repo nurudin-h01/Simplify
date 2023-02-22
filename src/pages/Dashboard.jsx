@@ -12,7 +12,7 @@ function Dashboard() {
     const [formstate, setformstate] = useRecoilState(classatom);
     const classvalue = useRecoilValue(classselector)
     return (
-        <div className="">
+        <div className="relative">
             <Navbar></Navbar>
             <Tab>
                 <div className='grid grid-cols-12'>

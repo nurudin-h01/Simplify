@@ -1,10 +1,13 @@
 import { Routes, Route } from "react-router";
-import App from "../App";
+import Dashboard from "pages/Dashboard";
+import Profil from "pages/Profil";
+
 
 export default function Routers() {
   return (
     <Routes>
-      <Route path="/" element={<App />}></Route>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/profil" element={<Profil />} />
     </Routes>
   );
 }
