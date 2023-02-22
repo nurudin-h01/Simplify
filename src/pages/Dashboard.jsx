@@ -15,6 +15,9 @@ function Dashboard() {
         <div className="relative">
             <Navbar></Navbar>
             <Tab>
+                <div>
+                    <p className='mt-5 mx-5 font-poppins font-bold text-[28px]'>Daftar Kelas</p>
+                </div>
                 <div className='grid grid-cols-12'>
                     <Filter></Filter>
                     <div className='col-span-9'>
