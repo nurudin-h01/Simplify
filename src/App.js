@@ -1,35 +1,12 @@
-import Navbar from './components/navbar';
-import Tab from './components/tab';
-import Filter from './components/filter';
-import Kelas from './components/kelas';
-import { useRecoilState, useRecoilValue } from 'recoil';
-import classatom from './store/atoms/ClassAtom';
-import classselector from './store/selectors/ClassSelector';
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Dashboard from 'pages/Dashboard';
 
 function App() {
-  const [formstate, setformstate] = useRecoilState(classatom);
-  const classvalue = useRecoilValue(classselector)
+  
   return (
-    <div className="">
-      <Navbar></Navbar>
-      <Tab>
-          <div className='grid grid-cols-12'>
-            <Filter></Filter>
-            <div className='col-span-9'>
-              { 
-                classvalue.map((x) => {
-                  return(
-                    <Kelas namakelas={x.namakelas}></Kelas>
-                  )
-                })
-              }
-              {console.log(classvalue)}
-            </div>
-          </div>
-          
-      </Tab>
-    </div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
   );
 }
 
