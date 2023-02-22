@@ -14,7 +14,8 @@ function Dashboard() {
     return (
         <div className="relative">
             <Navbar></Navbar>
-            <Tab>
+            <Tab></Tab>
+            <div className='mt-20 ml-20'>
                 <div>
                     <p className='mt-5 mx-5 font-poppins font-bold text-[28px]'>Daftar Kelas</p>
                 </div>
@@ -32,8 +33,7 @@ function Dashboard() {
                     {console.log(classvalue)}
                     </div>
                 </div>
-                
-            </Tab>
+            </div>
         </div>
     )
 }

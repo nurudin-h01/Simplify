@@ -5,7 +5,7 @@ import cupboard from "../icon/cupboard.png";
 
 export default function Tab({children}){
     return(
-        <div className="mt-14 fixed grid grid-cols-[60px_auto] w-full h-screen">
+        <div className="top-14 fixed grid grid-cols-[60px_auto] w-full h-screen">
             <div className=" bg-[#006EC5] flex flex-col">
                 <ul className="py-5 mx-auto">
                     <li className="">

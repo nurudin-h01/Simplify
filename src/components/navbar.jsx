@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 export default function Navbar({ children }) {
   let location = useLocation()
   return (
-    <div className="m-0 flex py-2 px-7 w-full shadow-md fixed">
+    <div className="top-0 flex py-2 px-7 w-full shadow-md fixed bg-white">
        <div className="grid grid-cols-12 w-full">
             <div className="col-span-3 my-auto">
                 <img src={image} className="h-10 aspect-auto ml-5" alt="" srcset="" />
