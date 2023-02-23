@@ -19,7 +19,7 @@ export default function Login() {
                     </div>
                     <div className='flex flex-col mt-3'>
                         <label className='font-poppins font-normal text-sm mb-1'>Password</label>
-                        <input className='py-1 px-2 border-2 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500' type="text" />
+                        <input className='py-1 px-2 border-2 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500' type="password" />
                     </div>
                     <button className='mt-3 w-full bg-blues hover:bg-blueDark text-white font-bold py-2 px-4 rounded'>login</button>
                 </form>
