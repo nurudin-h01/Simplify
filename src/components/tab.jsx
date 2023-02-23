@@ -37,9 +37,9 @@ export default function Tab({children}){
                         </WebLink>
                     </li>
                     <li className="">
-                        <button className=" my-3 rounded">
+                        <WebLink to="/kelasSaya">
                             <img className="h-4 m-3" src={menu} alt="" srcset="" />
-                        </button>
+                        </WebLink>
                     </li>
                 </ul>
 

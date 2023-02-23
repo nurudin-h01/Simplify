@@ -17,7 +17,7 @@ function Riwayat() {
             <Tab></Tab>
             <div className='mt-20 ml-20'>
                 <div>
-                    <p className='mt-5 mx-5 font-poppins font-bold text-[28px]'>Kelas</p>
+                    <p className='mt-5 mx-5 font-poppins font-bold text-[28px]'>Kelas Favorit</p>
                 </div>
                 <div className='grid grid-cols-12'>
                     <Filter></Filter>
