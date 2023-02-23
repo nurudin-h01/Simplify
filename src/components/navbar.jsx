@@ -1,11 +1,24 @@
 import React from "react";
 import image from "../icon/navbar.png";
 import profile from "../icon/profile.png";
-import { useLocation } from "react-router-dom";
+import { Link, useMatch, useResolvedPath, useLocation } from "react-router-dom";
 
 
 export default function Navbar({ children }) {
   let location = useLocation()
+
+  function WebLink({ children, to, ...props }) {
+    let resolved = useResolvedPath(to);
+    let match = useMatch({ path: resolved.pathname, end: true });
+    return (
+        <div>
+            <Link className={"nav-link " + (match ? "active" : "")} to={to} {...props}>
+                {children}
+            </Link>
+            {match && ""}
+        </div>
+    );
+}
   return (
     <div className="top-0 flex py-2 px-7 w-full shadow-md fixed bg-white">
        <div className="grid grid-cols-12 w-full">
